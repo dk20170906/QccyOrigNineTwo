@@ -85,9 +85,9 @@ C:\Users\Administrator\Desktop\QccyOrig\DccyOrigination\DccyOrigination\bin\Debu
 C:\Users\Administrator\Desktop\QccyOrig\DccyOrigination\DccyOrigination\bin\Debug\netcoreapp2.0\DccyOrigination.runtimeconfig.dev.json
 C:\Users\Administrator\Desktop\QccyOrig\DccyOrigination\DccyOrigination\bin\Debug\netcoreapp2.0\DccyOrigination.dll
 C:\Users\Administrator\Desktop\QccyOrig\DccyOrigination\DccyOrigination\bin\Debug\netcoreapp2.0\DccyOrigination.pdb
-C:\Users\Administrator\Desktop\QccyOrig\DccyOrigination\DccyOrigination\obj\Debug\netcoreapp2.0\DccyOrigination.csprojAssemblyReference.cache
 C:\Users\Administrator\Desktop\QccyOrig\DccyOrigination\DccyOrigination\obj\Debug\netcoreapp2.0\DccyOrigination.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Desktop\QccyOrig\DccyOrigination\DccyOrigination\obj\Debug\netcoreapp2.0\DccyOrigination.AssemblyInfoInputs.cache
 C:\Users\Administrator\Desktop\QccyOrig\DccyOrigination\DccyOrigination\obj\Debug\netcoreapp2.0\DccyOrigination.AssemblyInfo.cs
 C:\Users\Administrator\Desktop\QccyOrig\DccyOrigination\DccyOrigination\obj\Debug\netcoreapp2.0\DccyOrigination.dll
 C:\Users\Administrator\Desktop\QccyOrig\DccyOrigination\DccyOrigination\obj\Debug\netcoreapp2.0\DccyOrigination.pdb
+C:\Users\Administrator\Desktop\QccyOrig\DccyOrigination\DccyOrigination\bin\Debug\netcoreapp2.0\Log4Net.config

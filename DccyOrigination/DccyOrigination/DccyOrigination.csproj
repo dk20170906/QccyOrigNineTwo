@@ -61,6 +61,9 @@
     <Content Update="appsettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Update="Log4Net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Update="wwwroot\admstatic\imgs\bj.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
