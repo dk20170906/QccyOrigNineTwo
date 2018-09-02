@@ -1,0 +1,127 @@
+﻿* {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    background-image: url(../images/bg.jpg);
+    background-repeat: round;
+}
+
+.top {
+    height: 80px;
+    border-bottom: solid 6px darkgray;
+}
+
+    .top .imgs {
+        height: 60px;
+        width: 15%;
+        float: left;
+        margin-top: 10px;
+    }
+
+    .top .t_title {
+        height: 60px;
+        width: 10%;
+        float: left;
+        line-height: 60px;
+        border-left: solid 1px gray;
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+
+    .top .t_right {
+        width: 12%;
+        float: right;
+        margin: 50px;
+    }
+
+.left {
+    height: 800px;
+    width: 20%;
+    float: left;
+}
+
+.middle {
+    height: 800px;
+    width: 60%;
+    float: left;
+}
+
+.right {
+    height: 800px;
+    width: 20%;
+    float: right;
+}
+
+    .middle .m_top {
+        height: 300px;
+        width: 100%;
+        background: url('../images/用户注册图上.jpg');
+        background-repeat: repeat-x;
+    }
+
+    .middle .item {
+        height: 50px;
+        width: 100%;
+    }
+
+        .middle .item .i_name {
+            height: 50px;
+            width: 20%;
+            float: left;
+            text-align: right;
+            line-height: 30px;
+        }
+
+            .middle .item .i_name label {
+                display: block;
+                margin-right: 10px;
+            }
+
+        .middle .item .i_left {
+            height: 50px;
+            width: 60%;
+            float: left;
+        }
+
+            .middle .item .i_left input {
+                height: 30px;
+                width: 50%;
+                float: left;
+            }
+
+            .middle .item .i_left select {
+                height: 30px;
+                width: 20%;
+            }
+
+            .middle .item .i_left .sex {
+                width: 20%;
+                height: 30px;
+                float: left;
+                line-height: 30px;
+            }
+
+            .middle .item .i_left .i_like {
+                width: 30%;
+                height: 30px;
+                float: left;
+                line-height: 30px;
+            }
+
+        .middle .item .i_right {
+            height: 50px;
+            width: 20%;
+            float: left;
+        }
+
+        .middle .item .register input {
+            height: 50px;
+            width: 30%;
+            background-color: darkslategray;
+            cursor: pointer;
+            font-size: 25px;
+            color: white;
+            margin-top: 20px;
+        }

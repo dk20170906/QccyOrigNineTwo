@@ -1,0 +1,89 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\新文件夹1\**" />
+    <Content Remove="wwwroot\新文件夹1\**" />
+    <EmbeddedResource Remove="wwwroot\新文件夹1\**" />
+    <None Remove="wwwroot\新文件夹1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
+    <PackageReference Include="MySql.Data" Version="8.0.12" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.12" />
+    <PackageReference Include="System.Drawing.Common" Version="4.5.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\admindex\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\admindex\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\admindex\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\admindex\js\bootstrap.js" />
+    <None Include="wwwroot\admindex\js\jquery.dcjqaccordion.2.7.js" />
+    <None Include="wwwroot\admindex\js\jquery.fileupload.js" />
+    <None Include="wwwroot\admindex\js\jquery.min.js" />
+    <None Include="wwwroot\admindex\js\jquery.nicescroll.js" />
+    <None Include="wwwroot\admindex\js\jquery.scrollTo.js" />
+    <None Include="wwwroot\admindex\js\jquery.slimscroll.js" />
+    <None Include="wwwroot\admindex\js\jquery.vmap.asia.js" />
+    <None Include="wwwroot\admindex\js\jquery.vmap.australia.js" />
+    <None Include="wwwroot\admindex\js\jquery.vmap.europe.js" />
+    <None Include="wwwroot\admindex\js\jquery.vmap.js" />
+    <None Include="wwwroot\admindex\js\jquery.vmap.sampledata.js" />
+    <None Include="wwwroot\admindex\js\jquery.vmap.world.js" />
+    <None Include="wwwroot\admindex\js\jquery2.0.3.min.js" />
+    <None Include="wwwroot\admindex\js\lightbox-plus-jquery.min.js" />
+    <None Include="wwwroot\admindex\js\monthly.js" />
+    <None Include="wwwroot\admindex\js\morris.js" />
+    <None Include="wwwroot\admindex\js\raphael-min.js" />
+    <None Include="wwwroot\admindex\js\script.js" />
+    <None Include="wwwroot\admindex\js\scripts.js" />
+    <None Include="wwwroot\js\site.js" />
+    <None Include="wwwroot\js\site.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\admstatic\imgs\bj.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\js\site.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\js\site.min.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\js\site.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Html\getpass.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\API\Data\" />
+    <Folder Include="Areas\API\Models\" />
+  </ItemGroup>
+
+</Project>

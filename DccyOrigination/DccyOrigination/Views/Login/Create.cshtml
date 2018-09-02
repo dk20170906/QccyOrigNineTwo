@@ -1,0 +1,113 @@
+﻿
+@{
+    ViewData["Title"] = "用户注册";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+<link href="@Url.Content("~/loginstatic/css/register.css")" rel="stylesheet" />
+<!--顶部-->
+<div class="top">
+    <div class="imgs">
+        <img src="images/logo.jpg" align="bottom">
+    </div>
+    <div class="t_title">欢迎注册</div>
+    <div class="t_right">
+        <span style="color: gray">已有账号</span>
+        @Html.ActionLink("请登陆", "Index")
+    </div>
+</div>
+<!--左边框-->
+<div class="left"></div>
+<!--中间区域-->
+<form action="@Url.Action("Create","AdmUser")" method="post">
+    <div class="middle">
+        <div class="m_top"></div>
+        <!--注册信息-->
+        <div class="item">
+            <div class="i_name">
+                <label for="username">用户名</label>
+            </div>
+            <div class="i_left">
+                <input type="text" id="username">
+            </div>
+            <div class="i_right"></div>
+        </div>
+        <div class="item">
+            <div class="i_name">
+                <label for="password">密码</label>
+            </div>
+            <div class="i_left">
+                <input type="password" id="password">
+            </div>
+            <div class="i_right"></div>
+        </div>
+        <div class="item">
+            <div class="i_name">
+                <label for="repassword">重复密码</label>
+            </div>
+            <div class="i_left">
+                <input type="password" id="repassword">
+            </div>
+            <div class="i_right"></div>
+        </div>
+        <div class="item">
+            <div class="i_name">
+                <label>所在地</label>
+            </div>
+            <div class="i_left">
+                <select>
+                    <option>中国</option>
+                    <option>外国</option>
+                </select>
+                <select>
+                    <option>北京</option>
+                    <option>外省</option>
+                </select>
+            </div>
+            <div class="i_right"></div>
+        </div>
+        <div class="item">
+            <div class="i_name">
+                <label>性别</label>
+            </div>
+            <div class="i_left">
+                <div class="sex">
+                    <label for="main">男</label><input type="radio" name="sex" id="main">
+                </div>
+                <div class="sex">
+                    <label for="femain">女</label><input type="radio" name="sex" id="femain">
+                </div>
+
+            </div>
+            <div class="i_right"></div>
+        </div>
+        <div class="item">
+            <div class="i_name">
+                <label>爱好</label>
+            </div>
+            <div class="i_left">
+                <div class="i_like">
+                    <label for="box">足球</label> <input type="checkbox" id="box">
+                </div>
+                <div class="i_like">
+                    <label for="moiv">电影</label> <input type="checkbox" id="moiv">
+                </div>
+                <div class="i_like">
+                    <label for="girl">美女</label> <input type="checkbox" id="girl">
+                </div>
+            </div>
+            <div class="i_right"></div>
+        </div>
+        <!--立即注册-->
+        <div class="item">
+            <div class="i_name">
+                <label></label>
+            </div>
+            <div class="register">
+                <input type="submit" value="立即注册">
+            </div>
+        </div>
+    </div>
+</form>
+<div class="right"></div>
+
+

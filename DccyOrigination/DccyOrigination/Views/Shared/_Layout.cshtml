@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - testdb</title>
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link href="~/admindex/css/font.css" rel="stylesheet" />
+        <link href="~/admindex/css/font-awesome.css" rel="stylesheet" />
+        <link href="~/admindex/css/jqvmap.css" rel="stylesheet" />
+        <link href="~/admindex/css/lightbox.css" rel="stylesheet" />
+        <link href="~/admindex/css/minimal.css" rel="stylesheet" />
+        <link href="~/admindex/css/monthly.css" rel="stylesheet" />
+        <link href="~/admindex/css/morris.css" rel="stylesheet" />
+        <link href="~/admindex/css/style.css" rel="stylesheet" />
+        <link href="~/admindex/css/style-responsive.css" rel="stylesheet" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+    <section id="container">
+        <!--header start-->
+            @await Component.InvokeAsync("Header")
+        <!--header end-->
+        <!--sidebar start-->
+        <aside>
+            <div id="sidebar" class="nav-collapse">
+                <!-- sidebar menu start-->
+                @await Component.InvokeAsync("LeftMenu")
+                <!-- sidebar menu end-->
+            </div>
+        </aside>
+        <!--sidebar end-->
+        <!--main content start-->
+        <section id="main-content">
+            <section class="wrapper">
+                @RenderBody()
+            </section>
+            <!-- footer -->
+            @await Component.InvokeAsync("Footer")
+            <!-- / footer -->
+        </section>
+        <!--main content end-->
+    </section>
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+
+        <script src="~/admindex/js/jquery.dcjqaccordion.2.7.js"></script>
+        <script src="~/admindex/js/scripts.js"></script>
+        <script src="~/admindex/js/jquery.slimscroll.js"></script>
+        <script src="~/admindex/js/jquery.nicescroll.js"></script>
+
+        <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/flot-chart/excanvas.min.js"></script><![endif]-->
+        <script src="~/admindex/js/jquery.scrollTo.js"></script>
+
+        <script src="~/admindex/js/raphael-min.js"></script>
+        <script type="text/javascript" src="~/admindex/js/monthly.js"></script>
+
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

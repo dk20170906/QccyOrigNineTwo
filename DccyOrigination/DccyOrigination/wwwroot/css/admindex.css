@@ -1,0 +1,40 @@
+﻿body {
+    margin: 0 auto;
+}
+
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: #eeffcd;
+    height: 80px;
+}
+
+.leftMenu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #808080;
+    width: 18%;
+    height: auto;
+    overflow: hidden;
+}
+.mainContent {
+    position: absolute;
+    left: 18%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #37ff42;
+}
+.footer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: #eeffcd;
+    height: 80px;
+}
+
